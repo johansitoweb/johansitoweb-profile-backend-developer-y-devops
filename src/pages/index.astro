@@ -1,0 +1,26 @@
+---
+import Layout from '@layouts/Layout.astro';
+import Navbar from '@components/Navbar.astro';
+import ProfileSection from '@components/ProfileSection.astro';
+import AboutSection from '@components/AboutSection.astro';
+import ProjectsSection from '@components/ProjectsSection.astro';
+import SkillsSection from '@components/SkillsSection.astro';
+import FinalSection from '@components/FinalSection.astro';
+---
+
+<Layout title="Johan Mancebo">
+  <div class="min-w-[535px] max-w-screen-sm mx-auto py-16 px-8 selection:bg-gray-600 selection:text-white">
+    <header>
+      <Navbar />
+      <ProfileSection />
+    </header>
+    <main>
+      <AboutSection />
+      <ProjectsSection />
+      <SkillsSection />
+    </main>
+    <footer>
+      <FinalSection />
+    </footer>
+  </div>
+</Layout>

@@ -1,0 +1,17 @@
+---
+import Github from "@assets/icons/github.astro"
+import Email from "@assets/icons/email.astro"
+import ContainerHover from "@components/ContainerHover.astro"
+---
+
+<nav class="w-full flex justify-between items-center">
+  <span class="text-xl">@johansitoweb</span>
+  <div class="flex gap-3 items-center">
+    <ContainerHover link="mailto:mancebojohan97@gmail.com">
+      <Email />
+    </ContainerHover>
+    <ContainerHover link="https://github.com/johansitoweb">
+      <Github />
+    </ContainerHover>
+  </div>
+</nav>

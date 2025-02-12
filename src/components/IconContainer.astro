@@ -1,0 +1,9 @@
+---
+const name = Astro.props.name;
+---
+<div class="flex flex-col items-center justify-center">
+  <div class="inline-flex flex-col items-center justify-center p-3 border rounded-md bg-zinc-800 border-zinc-600">
+    <slot />
+  </div>
+  <span class="text-zinc-400 text-sm mt-1 font-sans">{name}</span>
+</div>

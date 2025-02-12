@@ -1,0 +1,26 @@
+---
+const projectTitle = Astro.props.projectTitle;
+const projectDescription = Astro.props.projectDescription;
+const projectLink = Astro.props.projectLink;
+const image = Astro.props.image;
+import ArrowLink from "@assets/icons/arrow-link.astro";
+---
+
+<article style={{
+  backgroundImage: 'radial-gradient(circle, #6c6c6c1d 0%, transparent 100%)'
+}}
+class="border border-zinc-700 bg-zinc-900 bg-opacity-40 p-8 rounded-lg flex flex-col-reverse md:flex-row justify-between mb-7 shadow-xl">
+  <div>
+      <a class="text-xl inline-flex items-center gap-2 hover:opacity-60 transition mb-2" target="_blank" href={projectLink}>
+        <h3 class="text-xl font-semibold inline-block">{projectTitle}</h3>
+        <span class="text-zinc-400">
+          <ArrowLink size="w-5 h-5" />
+        </span>
+      </a>
+      <p class="text-zinc-400 text-sm text-pretty pr-2 mb-4">{projectDescription}</p>
+    <div class="flex items-center gap-3">
+      <slot/>
+    </div>
+  </div>
+  <img class="w-full mb-5 shadow-xl rounded-lg md:w-52 md:mb-0" src={image} alt={`${projectTitle} image`} />
+</article>

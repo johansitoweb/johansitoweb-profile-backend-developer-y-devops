@@ -1,0 +1,25 @@
+---
+import ProjectCard from '@components/ProjectCard.astro'
+import Typescript from '@assets/icons/typescript.astro';
+import React from '@assets/icons/react.astro';
+import Supabase from '@assets/icons/supabase.astro';
+import Tailwind from '@assets/icons/tailwind.astro';
+---
+
+<section class="my-20">
+  <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
+  <hr class="mb-6 border-zinc-600">
+
+  <ProjectCard projectTitle="Centro Digital" projectDescription="Aplicación web que ayuda a los usuarios a buscar negocios locales cercanos, proporcionando información detallada, contactos, y mapas interactivos." projectLink="https://github.com/garaven/centro-digital" image="/images/centro-digital.png">
+    <React />
+    <Supabase />
+    <Tailwind />
+    <Typescript />
+  </ProjectCard>
+
+  <ProjectCard projectTitle="StockIn" projectDescription="Sistema de gestión de inventario eficiente para Pymes, que simplifica el seguimiento, el control y la optimización de los niveles de existencias para satisfacer sus necesidades específicas." projectLink="https://github.com/Gothsec/StockIn-demo" image="/images/stockin.png">
+    <React />
+    <Supabase />
+    <Tailwind />
+  </ProjectCard>
+</section>

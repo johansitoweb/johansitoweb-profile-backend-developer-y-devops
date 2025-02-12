@@ -1,0 +1,7 @@
+---
+const { link } = Astro.props;
+---
+
+<a class="hover:bg-zinc-800 hover:border-zinc-600 border border-transparent p-2 rounded-md transition" href={link} target="_blank">
+  <slot/>
+</a>
